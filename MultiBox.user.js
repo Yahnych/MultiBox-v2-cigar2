@@ -55,7 +55,7 @@ setInterval(()=>{
 window.stats = stats
 var Timer = new Date().toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/mu, `$1`);
 stats.info.name = `Time : ${Timer}`
-}, {}).apply(this , arguments);
+}, {}).bind(this , arguments);
 if(USE_EXTENSIONS){
 stop();
         GM_xmlhttpRequest({
