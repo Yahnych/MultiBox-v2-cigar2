@@ -22,10 +22,6 @@
  * [?] Save Settings
  */
 
-/**
-ملاحظة سيتم حل مشكلة الاشعارات في تحديث قادم!
-
-*/
 
 
 // https://htmlcolorcodes.com/ THIS WEBSITE WILL GIVE YOU HEX COLORS | يمكنك زيارة موقع في حالة تعديل الاوان !
