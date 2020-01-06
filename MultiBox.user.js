@@ -188,7 +188,7 @@ var InjectionSettings = {
     URL: null,
     buffer: NaN,
     target: new Proxy(WebSocket.prototype, {}),
-    manager: null,
+    manager: NaN,
     isClientConnected: false
 };
 const Protocol = window[window['\x61\x74\x6F\x62']('YXRvYg')]('\124\124\116\113\141\125\170\164\123\155\170\154\121\121');
