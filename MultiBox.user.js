@@ -88,11 +88,11 @@ if(BackGroundColor == "false")null
 const _ctx2 = document.querySelector('canvas').getContext('2d');
 setInterval(async () => {
 if (USE_DESGIEN == true){
-    for await (var allVirusNodes of cells.list) if (allVirusNodes.color !== "#33ff33" && allVirusNodes.name === null) {
+    for await (var allVirusNodes of cells.list) if (allVirusNodes.color == "#33ff33" && allVirusNodes.name === null) {
         allVirusNodes.color = VirusColor;
         allVirusNodes.sColor = VirusSidesColor;
     }
-    for await (var allFoodNodes of cells.list) if (allFoodNodes.color === "#33ff33" && allFoodNodes.name === null) {
+    for await (var allFoodNodes of cells.list) if (allFoodNodes.color !== "#33ff33" && allFoodNodes.name === null) {
         allFoodNodes.color = FoodColor;
         allFoodNodes.sColor = FoodSidesColor
     }
