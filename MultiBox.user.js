@@ -174,7 +174,7 @@ var MultiBoxSetup = {
                 Swal.fire({
                     icon: "error",
                     title: (`[MutliBox] : DISSCONNECTED!`),
-                    text: (`تم أنفصال اداة ملتي بوكس عن الخادم! \n | السبب : ${reason}`)
+                    text: (`تم أنفصال اداة ملتي بوكس عن الخادم! \n | السبب : ${reason.reason}`)
                 });
             }
             console.error(`[MutliBox] : DISSCONNECTED! | Reason : ${reason}`);
