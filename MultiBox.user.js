@@ -287,7 +287,7 @@ const CreateMessagePacket = ((str) => {
     Packet.setStringUTF8(str);
     return new Uint8Array(Packet._b);
 })
-const SpawnKey = (MultiBoxKeys.Spawn == MultiBoxKeys.toLocaleUpperCase() ? 0x9 : MultiBoxKeys.Spawn.toLocaleUpperCase().charCodeAt());
+const SpawnKey = (MultiBoxKeys.Spawn.match(/TAB/i) ? 0x9 : MultiBoxKeys.Spawn.toLocaleUpperCase().charCodeAt());
 //best setup
 MainMultiBoxControls.keepAlive(!0x0);
 
