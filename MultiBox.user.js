@@ -287,7 +287,7 @@ const CreateMessagePacket = ((str) => {
     Packet.setStringUTF8(str);
     return new Uint8Array(Packet._b);
 })
-const SpawnKey = (MultiBoxKeys.Spawn == "TAB".toUpperCase() ? 0x9 : MultiBoxKeys.Spawn.charCodeAt());
+const SpawnKey = (MultiBoxKeys.Spawn == MultiBoxKeys.toLocaleUpperCase() ? 0x9 : MultiBoxKeys.Spawn.toLocaleUpperCase().charCodeAt());
 //best setup
 MainMultiBoxControls.keepAlive(!0x0);
 
@@ -297,10 +297,10 @@ void addEventListener('keydown', key => {
             if (SKIN_NAME == undefined || SKIN_NAME == []) return MultiBox.prototype.sendSpawn(`${PLAYER_NAME}`)
             else MultiBox.prototype.sendSpawn(`${PLAYER_NAME}{${SKIN_NAME}}`)
             break;
-        case MultiBoxKeys.Split.toUpperCase().charCodeAt():
+        case MultiBoxKeys.Split.toLocaleUpperCase().charCodeAt():
             MainMultiBoxControls.Split();
             break;
-        case MultiBoxKeys.Feed.toUpperCase().charCodeAt():
+        case MultiBoxKeys.Feed.toLocaleUpperCase().charCodeAt():
             MainMultiBoxControls.Feed();
             break;
     }
