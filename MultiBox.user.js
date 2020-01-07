@@ -177,7 +177,7 @@ var MultiBoxSetup = {
                     text: (`تم أنفصال اداة ملتي بوكس عن الخادم! \n | السبب : ${reason.reason}`)
                 });
             }
-            console.error(`[MutliBox] : DISSCONNECTED! | Reason : ${reason}`);
+            console.error(`[MutliBox] : DISSCONNECTED! | Reason : ${reason.reason}`);
         }
     },
     onmessage(buffer) {
