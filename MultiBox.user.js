@@ -11,9 +11,10 @@
 // ==/UserScript==
 
 /**
- * @Copyrights  (XLX - 2019)
+ * @copyrights  (XLX - 2019)
  * @Discord (Cyper#9999)
  * @LAST_UPDATED 2020-1-1
+ * @see <https://github.com/Cyper-New/MultiBox-v2-cigar2/blob/master/MultiBox.user.js>
  * [+] Fully MultiBox
  * [?] Camera Control
  * [+] Full Arabic Language
